@@ -24,28 +24,6 @@ p {
   color: black;
 }
 
-.header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /*--------------header styles start-----------------------------------*/
 .header {
   position: relative;
@@ -54,10 +32,11 @@ p {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
+
   /* выше установили ограничения для секции */
 }
 
-/* .logo {} */
 
 .logo_place_header {
   position: absolute;
@@ -102,11 +81,9 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-
   width: 765px;
   height: 608px;
   z-index: 1;
-
   background: url(./../images/header-image.png) 0 0/100% 100% no-repeat;
 }
 
@@ -121,21 +98,17 @@ p {
   background-color: #2f80ed;
 }
 
-
 /*--------------header styles end-----------------------------------*/
 
 /*--------------description styles start-----------------------------------*/
-
 .description {
   margin-top: 100px;
 }
 
 .two-columns {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: baseline;
-
   background-color: #fff;
   width: 80%;
   margin: 0 auto;
@@ -149,7 +122,6 @@ p {
   color: #2f80ed;
   text-decoration: none;
   transition: color .2s ease-in;
-
 }
 
 .two-columns__brief a:hover {
@@ -176,7 +148,6 @@ p {
   line-height: 34px;
   font-weight: 600;
 }
-
 /*--------------description styles end-----------------------------------*/
 
 /*--------------digits styles end-----------------------------------*/
@@ -233,19 +204,17 @@ p {
 .table__text+p {
   margin-top: 20px;
 }
-
 /*--------------digits styles end-----------------------------------*/
 
 /*--------------feynman styles start-----------------------------------*/
-
 .feynman {
   position: relative;
   background: url(./../images/feynman.png) left 0 bottom 0 no-repeat;
   background-color: #f2f2f2;
   height: 890px;
 }
-
-/* .feynman img {
+/* ниже  преставлен вариант выведения картинки через тег <img> ( в HTML коде на 102 строке )*/
+/* .feynman img { 
   position: absolute;
   bottom: 0;
   left: 0;
