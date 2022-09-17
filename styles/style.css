@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -9,7 +9,7 @@ p {
   padding: 0;
   font-size: inherit;
   font-weight: inherit;
-}
+} */
 
 .page {
   min-width: 1100px;
@@ -52,28 +52,37 @@ p {
   line-height: 96px;
   font-weight: 600;
   padding-left: 64px;
-  width: 730px;
+  max-width: 730px;
   z-index: 2;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* font-size: inherit; */
+  /* font-weight: inherit; */
 }
 
 .header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   z-index: 2;
 }
 
-.header__link {
+
+
+.link {
   color: #2f80ed;
   text-decoration: none;
   transition: color .2s ease-in;
+  font-weight: normal;
+  font-size: inherit;
 }
 
-.header__link:hover {
+
+.link:hover {
   color: hsl(319, 100%, 50%);
 }
 
@@ -118,15 +127,10 @@ p {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  width: 175px;
-  color: #2f80ed;
-  text-decoration: none;
-  transition: color .2s ease-in;
+  max-width: 175px;
 }
 
-.two-columns__brief a:hover {
-  color: rgba(255, 251, 33, 0.721);
-}
+
 
 .two-columns__main-text {
   display: flex;
@@ -148,6 +152,7 @@ p {
   line-height: 34px;
   font-weight: 600;
 }
+
 /*--------------description styles end-----------------------------------*/
 
 /*--------------digits styles end-----------------------------------*/
@@ -186,6 +191,9 @@ p {
 
 .table__cell {
   width: 250px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .table__heading {
@@ -204,6 +212,7 @@ p {
 .table__text+p {
   margin-top: 20px;
 }
+
 /*--------------digits styles end-----------------------------------*/
 
 /*--------------feynman styles start-----------------------------------*/
@@ -213,6 +222,7 @@ p {
   background-color: #f2f2f2;
   height: 890px;
 }
+
 /* ниже  преставлен вариант выведения картинки через тег <img> ( в HTML коде на 102 строке )*/
 /* .feynman img { 
   position: absolute;
@@ -232,12 +242,12 @@ p {
   line-height: 1.15;
   font-weight: 600;
   padding-top: 100px;
-  width: 648px;
+  max-width: 648px;
   /* z-index: 2; */
 }
 
 .feynman__subtitle {
-  position: relative;
+  /* position: relative; */
   text-align: center;
   align-items: center;
   margin: 0 auto;
@@ -245,11 +255,11 @@ p {
   line-height: 51px;
   font-weight: normal;
   padding-top: 70px;
-  width: 648px;
+  max-width: 648px;
   /* z-index: 2; */
 }
 
-.feynman__link a {
+.feynman__link {
   position: absolute;
   top: 50%;
   right: 0;
@@ -258,14 +268,8 @@ p {
   line-height: 51px;
   font-weight: normal;
   padding-right: 48px;
-  color: #2f80ed;
-  text-decoration: none;
-  transition: color .2s ease-in;
 }
 
-.feynman__link a:hover {
-  color: #2fed78;
-}
 
 /*--------------feynman styles end-----------------------------------*/
 
@@ -343,7 +347,7 @@ p {
 }
 
 
-.hooter__column-heading {
+.footer__column-heading {
   font-style: 18px;
   line-height: 30px;
   font-weight: 600;
@@ -353,6 +357,9 @@ p {
 .footer__column-links {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .footer__column-link {
@@ -362,9 +369,10 @@ p {
   color: inherit;
   text-decoration: none;
   transition: color .2s ease-in;
+
 }
 
-.footer__column-link:hover{
+.footer__column-link:hover {
   color: rgb(253, 20, 20);
 }
 
