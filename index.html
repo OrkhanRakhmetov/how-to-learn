@@ -11,26 +11,26 @@
 
 <body>
 
-  <main class="content">
+  <div class="page">
 
-    <div class="page">
+    <header class="header">
+      <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип шапки">
+      <h1 class="header__title">Научиться учиться</h1>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
+        жизни?
+        <a class="header__link link" href="#Feyman_metod">Узнать &rarr;</a>
+      </p>
+      <div>
+        <div class="header__main-illustration"></div>
+        <div class="header__square-pic"></div>
+      </div>
+    </header>
 
-      <header class="header">
-        <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип шапки">
-        <h1 class="header__title">Научиться учиться</h1>
-        <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
-          жизни?
-          <a class="header__link link" href="#Feyman_metod">Узнать &rarr;</a>
-        </p>
-        <div>
-          <div class="header__main-illustration"></div>
-          <div class="header__square-pic"></div>
-        </div>
-      </header>
+    <main class="content">
 
       <section class="description">
         <div class="two-columns">
-          <h2><a class="two-columns__brief link" href="#">Главные проблемы в обучении</a></h2>
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
               материал.
@@ -50,7 +50,7 @@
 
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
-        <h3 class="section-subtitle">Про учёбу и мозг</h3>
+        <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
           <li class="table__cell">
             <h4 class="table__heading">86 миллиардов</h4>
@@ -59,7 +59,7 @@
           <li class="table__cell">
             <h4 class="table__heading">2.1 миллиарда</h4>
             <p class="table__text">Число нуждающихся в повышении квалификации</p>
-            <p>Всемирный Банк, 2017</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
             <h4 class="table__heading">1000 терабайт</h4>
@@ -72,7 +72,7 @@
           <li class="table__cell">
             <h4 class="table__heading">420 миллионов</h4>
             <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
-            <p>Всемирный Банк, 2017</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
             <h4 class="table__heading">17–20 лет</h4>
@@ -152,44 +152,43 @@
 
       </section>
 
-      <footer class="footer">
+    </main>
 
-        <div class="footer__columns">
+    <footer class="footer">
 
-          <div class="footer__column footer__column_content_copyright">
-            <img class="logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип подвала">
-            <p class="footer__author">&copy; Рахметов Орхан</p>
-          </div>
+      <div class="footer__columns">
 
-          <nav class="footer__column footer__column_content_info">
-            <h3 class="footer__column-heading">О Практикуме</h3>
-            <ul class="footer__column-links">
-              <li><a class="footer__column-link" href="">Главная</a></li>
-              <li><a class="footer__column-link" href="">Концепция</a></li>
-              <li><a class="footer__column-link" href="">Наставники</a></li>
-            </ul>
-          </nav>
-
-          <nav class="footer__column footer__column_content_social">
-            <h3 class="footer__column-heading">О Практикуме</h3>
-            <ul class="footer__column-links">
-              <li><a class="footer__column-link" href="#"><img src="./images/facebook_color_white.svg"
-                    alt="Фейсбук иконка" class="footer__social-icon">Facebook</a></li>
-              <li><a class="footer__column-link" href="#"><img src="./images/vk_color_white.svg" alt="ВКонтакте иконка"
-                    class="footer__social-icon">ВКонтакте</a></li>
-              <li><a class="footer__column-link" href="#"><img src="./images/instagram_color_white.svg"
-                    alt="Инстаграмм иконка" class="footer__social-icon">Instagram</a></li>
-            </ul>
-          </nav>
-
+        <div class="footer__column footer__column_content_copyright">
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="Логотип подвала">
+          <p class="footer__author">&copy; Рахметов Орхан</p>
         </div>
 
-      </footer>
+        <nav class="footer__column footer__column_content_info">
+          <h3 class="footer__column-heading">О Практикуме</h3>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="">Главная</a></li>
+            <li><a class="footer__column-link" href="">Концепция</a></li>
+            <li><a class="footer__column-link" href="">Наставники</a></li>
+          </ul>
+        </nav>
 
-    </div>
+        <nav class="footer__column footer__column_content_social">
+          <h3 class="footer__column-heading">О Практикуме</h3>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="#"><img src="./images/facebook_color_white.svg"
+                  alt="Фейсбук иконка" class="footer__social-icon">Facebook</a></li>
+            <li><a class="footer__column-link" href="#"><img src="./images/vk_color_white.svg" alt="ВКонтакте иконка"
+                  class="footer__social-icon">ВКонтакте</a></li>
+            <li><a class="footer__column-link" href="#"><img src="./images/instagram_color_white.svg"
+                  alt="Инстаграмм иконка" class="footer__social-icon">Instagram</a></li>
+          </ul>
+        </nav>
 
-  </main>
+      </div>
 
+    </footer>
+
+  </div>
 
 </body>
 

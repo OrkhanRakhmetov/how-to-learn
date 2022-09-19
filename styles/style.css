@@ -1,16 +1,4 @@
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  font-weight: inherit;
-} */
-
+/*--------------page styles start-----------------------------------*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,9 +8,9 @@ p {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
   color: black;
 }
+/*--------------page styles end-----------------------------------*/
 
 /*--------------header styles start-----------------------------------*/
 .header {
@@ -33,10 +21,7 @@ p {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-
-  /* выше установили ограничения для секции */
 }
-
 
 .logo_place_header {
   position: absolute;
@@ -54,10 +39,6 @@ p {
   padding-left: 64px;
   max-width: 730px;
   z-index: 2;
-  /* margin: 0; */
-  /* padding: 0; */
-  /* font-size: inherit; */
-  /* font-weight: inherit; */
 }
 
 .header__subtitle {
@@ -70,8 +51,6 @@ p {
   font-weight: normal;
   z-index: 2;
 }
-
-
 
 .link {
   color: #2f80ed;
@@ -123,14 +102,13 @@ p {
   margin: 0 auto;
 }
 
-.two-columns__brief a {
+.two-columns__brief {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   max-width: 175px;
+  color: #2f80ed;
 }
-
-
 
 .two-columns__main-text {
   display: flex;
@@ -190,6 +168,9 @@ p {
 }
 
 .table__cell {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   width: 250px;
   padding: 0;
   margin: 0;
@@ -200,17 +181,19 @@ p {
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  margin: 0;
 }
 
-.table__text+p {
-  margin-top: 20px;
+.table__text :last-child {
+  margin: 0;
+  padding: 0;
 }
 
 /*--------------digits styles end-----------------------------------*/
@@ -243,11 +226,9 @@ p {
   font-weight: 600;
   padding-top: 100px;
   max-width: 648px;
-  /* z-index: 2; */
 }
 
 .feynman__subtitle {
-  /* position: relative; */
   text-align: center;
   align-items: center;
   margin: 0 auto;
@@ -256,7 +237,6 @@ p {
   font-weight: normal;
   padding-top: 70px;
   max-width: 648px;
-  /* z-index: 2; */
 }
 
 .feynman__link {
@@ -269,7 +249,6 @@ p {
   font-weight: normal;
   padding-right: 48px;
 }
-
 
 /*--------------feynman styles end-----------------------------------*/
 
@@ -381,5 +360,4 @@ p {
   height: 16px;
   margin-right: 10px;
 }
-
 /*--------------footer styles end-----------------------------------*/
