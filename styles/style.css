@@ -261,10 +261,20 @@
 
 /*#region-------kaufman styles start-------------*/
 .kaufman {
-  position: relative;
-  background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
+  position: relative;
+  background-color: #1f1f1f;
+  /* background: url(./../images/kaufman-triangle.svg)top 0 right -210px no-repeat #1f1f1f;
+  background-size: 878px; */
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 878px;
+  height: 878px;
 }
 
 .section-title_theme_dark {
@@ -286,13 +296,6 @@
   margin-top: 0px;
 }
 
-.kaufman__triangle {
-  position: absolute;
-  top: 0;
-  right: -210px;
-  width: 878px;
-  height: 878px;
-}
 
 /*#endregion--------------kaufman styles end-----------------------------------*/
 
