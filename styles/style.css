@@ -111,6 +111,8 @@
   font-weight: normal;
   max-width: 175px;
   color: #2f80ed;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -126,6 +128,8 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__span-accent {
@@ -168,6 +172,7 @@
   width: 1110px;
   row-gap: 60px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .table__cell {
@@ -325,14 +330,14 @@
   line-height: 25px;
   font-weight: normal;
   padding: 18px 0;
+  margin: 0;
 }
-
 
 .footer__column-heading {
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .footer__column-links {
@@ -350,7 +355,7 @@
   color: inherit;
   text-decoration: none;
   transition: color .2s ease-in;
-
+  padding-bottom: 16px;
 }
 
 .footer__column-link:hover {
