@@ -1,7 +1,6 @@
 .link-opacity {
     color: #2f80ed;
     text-decoration: none;
-    transition: color .2s ease-in;
     font-weight: normal;
     font-size: inherit;
     opacity: 1;
