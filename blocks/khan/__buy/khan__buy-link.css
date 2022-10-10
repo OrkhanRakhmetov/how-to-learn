@@ -1,0 +1,9 @@
+.khan__buy-link {
+    display: inline;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+    transition: color .2s ease-in;
+  }
