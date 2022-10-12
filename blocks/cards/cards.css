@@ -5,4 +5,5 @@
     flex-wrap: wrap;
     row-gap: 60px;
     column-gap: 100px;
+    list-style-type: none;
   }
